@@ -11,12 +11,13 @@ body {
 li {
   list-style-type: none;
 }
+
 /* a {
   text-decoration: none;
 } */
 .wrapper {
   min-width: 900px;
-  width: 1170px;
+  max-width: 1200px;
   margin: auto;
   height: 100vh;
   padding: 20px 0;
@@ -66,9 +67,16 @@ section.sidebar {
   justify-content: space-between;
   padding: 0 10px;
 }
+.search-ico a {
+  font-size: 20px;
+  color: #b1b1b1;
+}
 .search input {
   width: 292px;
   height: 30px;
+  border: hidden;
+  margin-left: 10px;
+  padding-left: 10px;
 }
 /* fine search */
 .sidebar > .alert {
@@ -130,6 +138,48 @@ section.content {
 .content > .message {
   height: 70px;
   background: #f3eeea;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 10px;
+}
+.content > .message input {
+  width: 86%;
+  height: 80%;
+  border-radius: 5px;
+  border: none;
+}
+.smile {
+  font-size: 20px;
+  color: #85848D;
+}
+
+.plane  {
+  font-size: 25px;
+  color: #85848D;
 }
 
 /* Fine Content */
+/* Template */
+.template {
+  display:none;
+}
+.green {
+    background-color: #D5F9C4;
+}
+.white {
+  background-color: white;
+}
+.message-template {
+  background-color: #D5F9C4;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.msg-right {
+  margin-left: 463px;
+}
+.msg-left {
+  margin-right: 463px;
+}
