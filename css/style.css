@@ -18,10 +18,9 @@ li {
   min-width: 900px;
   width: 1170px;
   margin: auto;
-  background-color: yellow;
   height: 100vh;
-  /* margin-top: 20px;
-  margin-bottom: 20px; */
+  padding: 20px 0;
+
 }
 img {
   width: 100%;
@@ -60,6 +59,18 @@ section.sidebar {
 }
 
 /* fine header */
+/* search */
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.search input {
+  width: 292px;
+  height: 30px;
+}
+/* fine search */
 .sidebar > .alert {
   height: 90px;
   background: #8edafc;
@@ -80,7 +91,7 @@ section.sidebar {
   background: #ffffff;
   padding-left: 10px;
   align-items: center;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #f5f5f5;
 }
 .img-avatar {
   width: 60px;
