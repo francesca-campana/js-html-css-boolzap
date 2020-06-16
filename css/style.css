@@ -154,7 +154,7 @@ section.content {
   color: #85848D;
 }
 
-.plane  {
+.plane , .phone  {
   font-size: 25px;
   color: #85848D;
 }
@@ -171,15 +171,18 @@ section.content {
   background-color: white;
 }
 .message-template {
-  background-color: #D5F9C4;
+  /* background-color: #D5F9C4; */
   width: 300px;
   padding: 20px;
   border-radius: 10px;
   margin-top: 20px;
 }
 .msg-right {
-  margin-left: 463px;
+  margin-left: 490px;
 }
 .msg-left {
-  margin-right: 463px;
+  margin-left: 50px;
+}
+.active {
+  display:none;
 }
