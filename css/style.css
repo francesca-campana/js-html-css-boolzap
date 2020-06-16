@@ -5,6 +5,7 @@
 }
 body {
   background:linear-gradient(180deg, #009688 12%, #d8dbd5 12%);
+  font-family: 'Roboto', sans-serif;
 }
 .wrapper {
   min-width: 900px;
@@ -14,6 +15,9 @@ body {
   height: 100vh;
   /* margin-top: 20px;
   margin-bottom: 20px; */
+}
+img {
+  width: 100%;
 }
 /* Sidebar */
 section.sidebar {
@@ -39,6 +43,16 @@ section.sidebar {
   background: blue;
   overflow-y: auto;
 }
+/* Contacts */
+li.contact-name {
+  height: 80px;
+  display: flex;
+  background: lightgray;
+}
+.img-avatar {
+  width:80px;
+}
+/* Fine Contacts */
 /* Fine Sidebar */
 
 /* Content */
@@ -51,6 +65,7 @@ section.content {
 .content > .chat {
   height: calc( 100% - 140px );
   background: black;
+  overflow-y: auto;
 }
 .content > .message {
   height: 70px;
