@@ -28,15 +28,15 @@ section.sidebar {
 }
 .sidebar > .header, .content > .header  {
   height: 70px;
-  background: orange;
+  background: #eaeaea;
 }
 .sidebar > .alert {
   height: 90px;
-  background: cyan;
+  background: #8edafc;
 }
 .sidebar > .search {
   height: 50px;
-  background: magenta;
+  background: #fafafa;
 }
 .sidebar > .contacts {
   height: calc( 100% - 210px );
@@ -44,13 +44,32 @@ section.sidebar {
   overflow-y: auto;
 }
 /* Contacts */
-li.contact-name {
+.contact-name {
   height: 80px;
   display: flex;
-  background: lightgray;
+  background: #ffffff;
+  padding-left: 10px;
+  align-items: center;
+  border-bottom: 1px solid gray;
 }
 .img-avatar {
-  width:80px;
+  width: 60px;
+}
+.name-avatar {
+  padding-left: 10px;
+}
+.name-avatar h2 {
+  font-size: 18px;
+  color: black;
+  font-weight: normal;
+
+}
+.name-avatar span {
+  font-size: 15px;
+  color: lightgray;
+}
+.img-avatar img {
+  border-radius: 50%;
 }
 /* Fine Contacts */
 /* Fine Sidebar */
@@ -64,12 +83,12 @@ section.content {
 }
 .content > .chat {
   height: calc( 100% - 140px );
-  background: black;
+  background-image: url(../img/mine.jpg);
   overflow-y: auto;
 }
 .content > .message {
   height: 70px;
-  background: purple;
+  background: #f3eeea;
 }
 
 /* Fine Content */
