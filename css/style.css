@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background:linear-gradient(180deg, #009688 12%, #d8dbd5 12%);
+}
+.wrapper {
+  min-width: 900px;
+  width: 1170px;
+  margin: auto;
+  background-color: yellow;
+  height: 100vh;
+  /* margin-top: 20px;
+  margin-bottom: 20px; */
+}
+/* Sidebar */
+section.sidebar {
+  float: left;
+  width: 30%;
+  background-color: pink;
+  height: 100%;
+}
+.sidebar > .header, .content > .header  {
+  height: 70px;
+  background: orange;
+}
+.sidebar > .alert {
+  height: 90px;
+  background: cyan;
+}
+.sidebar > .search {
+  height: 50px;
+  background: magenta;
+}
+.sidebar > .contacts {
+  height: calc( 100% - 210px );
+  background: blue;
+  overflow-y: auto;
+}
+/* Fine Sidebar */
+
+/* Content */
+section.content {
+  float: left;
+  width: 70%;
+  background-color: red;
+  height: 100%;
+}
+.content > .chat {
+  height: calc( 100% - 140px );
+  background: black;
+}
+.content > .message {
+  height: 70px;
+  background: purple;
+}
+
+/* Fine Content */
