@@ -7,6 +7,13 @@ body {
   background:linear-gradient(180deg, #009688 12%, #d8dbd5 12%);
   font-family: 'Roboto', sans-serif;
 }
+
+li {
+  list-style-type: none;
+}
+/* a {
+  text-decoration: none;
+} */
 .wrapper {
   min-width: 900px;
   width: 1170px;
@@ -26,10 +33,33 @@ section.sidebar {
   background-color: pink;
   height: 100%;
 }
+/* header */
 .sidebar > .header, .content > .header  {
   height: 70px;
   background: #eaeaea;
+
 }
+.me , .you {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+.header .img-avatar {
+  width: 50px;
+}
+.icon {
+  display: flex;
+  /* padding-right: 10px; */
+}
+.icon a {
+  padding-right: 20px;
+  color: #b1b1b1;
+  font-size: 20px;
+}
+
+/* fine header */
 .sidebar > .alert {
   height: 90px;
   background: #8edafc;
