@@ -1,9 +1,7 @@
 $(document).ready(function(){
-  $('.search-ico').click(function(){
-     searchName();
-  });
+  
   $('#search').keypress(function (event){
-    if (event.which === 13) {
+    if (event.which) {
       searchName();
     }
 
@@ -57,7 +55,6 @@ $(document).ready(function(){
     }else {
       $('.js-contact-name').show();
     }
-
 
 
   }
