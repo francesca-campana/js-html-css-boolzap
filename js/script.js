@@ -1,14 +1,21 @@
 $(document).ready(function(){
+  $('.search-ico').click(function(){
+     searchName();
+  });
+  $('#search').keypress(function (event){
+    if (event.which === 13) {
+      searchName();
+    }
+
+  });
 
 
   $('.send-message').click(function(){
     $('.plane').toggleClass('active');
     $('.phone').toggleClass('active');
 
-
-
-    // $('.send-message').removeClass('active');
     sendMessage();
+
 
     setTimeout(function (){
       receivedMessage();
@@ -27,6 +34,33 @@ $(document).ready(function(){
     }
 
   });
+
+  function searchName(){
+    var valueNameInput = $('#search').val().toLowerCase();
+    // console.log(getNameInput);
+    // var arrayNameInput = getNameInput.split('');
+    // console.log(arrayNameInput);
+    if (valueNameInput.length != 0) {
+      $('.js-contact-name').each(function (){
+        console.log(this);
+        var eachName = $(this).find('.singol-contact').text().toLowerCase();
+        console.log(eachName);
+        if (eachName.includes(valueNameInput)) {
+          $(this).show();
+
+        }else {
+          $(this).hide();
+        }
+
+      });
+
+    }else {
+      $('.js-contact-name').show();
+    }
+
+
+
+  }
 
   function dateNow(){
     var d = new Date();

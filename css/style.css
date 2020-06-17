@@ -38,6 +38,9 @@ section.sidebar {
   background-color: pink;
   height: 100%;
 }
+i {
+  cursor: pointer;
+}
 /* header */
 .sidebar > .header, .content > .header  {
   height: 70px;
@@ -82,7 +85,7 @@ section.sidebar {
   justify-content: space-between;
   padding: 10px;
 }
-.search-ico a {
+.search-ico i {
   font-size: 20px;
   color: #b1b1b1;
 }
@@ -113,7 +116,7 @@ section.sidebar {
 }
 .sidebar > .contacts {
   height: calc( 100% - 210px );
-  background: blue;
+  background: #ffffff;
   overflow-y: auto;
 }
 /* Contacts */
