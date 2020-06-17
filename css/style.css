@@ -171,9 +171,10 @@ section.content {
   color: #85848D;
 }
 
-.plane , .phone  {
+.send-message  {
   font-size: 25px;
   color: #85848D;
+  cursor: pointer;
 }
 
 /* Fine Content */
@@ -181,12 +182,7 @@ section.content {
 .template {
   display:none;
 }
-.green {
-    background-color: #D5F9C4;
-}
-.white {
-  background-color: white;
-}
+
 .message-template {
   /* background-color: #D5F9C4; */
   max-width: 300px;
@@ -194,21 +190,26 @@ section.content {
   padding: 10px;
   border-radius: 10px;
   margin-top: 20px;
+  position: relative;
 }
 .message-template span {
   font-size: 13px;
+
 }
-.message-template p {
+.message-template > .time {
+  position:absolute;
   font-size: 9px;
-  text-align: right;
+  bottom: 7px;
+  right: 7px;
 
 }
-.msg-right {
-
+.msg-send {
   align-self: flex-end;
+  background-color: #D5F9C4
 }
-.msg-left {
+.msg-received {
   align-self: flex-start;
+  background-color: white;
 }
 .active {
   display:none;
