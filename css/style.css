@@ -191,10 +191,11 @@ section.content {
   height: calc( 100% - 140px );
   background-image: url(../img/mine.jpg);
   overflow-y: scroll;
-  display: flex;
-  flex-direction: column;
   padding: 20px;
-
+}
+.chat-item {
+  overflow-y: scroll;
+  display: none;
 }
 .content > .message {
   height: 70px;
@@ -218,6 +219,7 @@ section.content {
 .send-message  {
   font-size: 25px;
   color: #85848D;
+
 }
 
 /* Fine Content */
@@ -247,12 +249,19 @@ section.content {
 }
 .msg-send {
   align-self: flex-end;
-  background-color: #D5F9C4
+  background-color: #D5F9C4;
+  float: right;
+  clear: both;
 }
 .msg-received {
   align-self: flex-start;
   background-color: white;
+  float: left;
+  clear: both;
 }
 .active {
   display:none;
+}
+.visible {
+  display: block;
 }

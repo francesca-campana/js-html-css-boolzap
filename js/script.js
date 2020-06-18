@@ -1,4 +1,21 @@
 $(document).ready(function(){
+  $('.contacts li').click(function (){
+    var dataContact = $(this).attr('data-contact');
+
+    var srcImmage = $(this).children('.img-avatar').children('img').attr('src');
+    console.log(dataContact);
+    console.log(srcImmage);
+    $('.chat-item').removeClass('visible');
+    var selettore = '.chat-item[ data-chat= "' + dataContact + '"]';
+    console.log(selettore);
+    $(selettore).addClass('visible');
+    console.log(selettore);
+    if ($(selettore).addClass('visible')) {
+      var immagineAvatar = $('.you .img-avatar').children('img').attr('src' , srcImmage );
+      console.log(immagineAvatar);
+    }
+
+  });
 
   $('#search').keyup(function (event){
     if ( event.which ) {
@@ -77,7 +94,7 @@ $(document).ready(function(){
 
   function receivedMessage() {
     var template = $('.template > .message-template').clone();
-    template.children('.text').text('Ciao');
+    template.children('.text').text('ok');
     var timeAdd = dateNow();
     template.children('.time').text(timeAdd);
 
