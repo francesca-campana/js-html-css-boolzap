@@ -1,18 +1,21 @@
 $(document).ready(function(){
   $('.contacts li').click(function (){
+    var index = $(this).index();
+    console.log(index);
     var dataContact = $(this).attr('data-contact');
-
-    var srcImmage = $(this).children('.img-avatar').children('img').attr('src');
+    var srcImage = $(this).children('.img-avatar').children('img').attr('src');
     console.log(dataContact);
-    console.log(srcImmage);
+    console.log(srcImage);
     $('.chat-item').removeClass('visible');
     var selettore = '.chat-item[ data-chat= "' + dataContact + '"]';
     console.log(selettore);
     $(selettore).addClass('visible');
     console.log(selettore);
     if ($(selettore).addClass('visible')) {
-      var immagineAvatar = $('.you .img-avatar').children('img').attr('src' , srcImmage );
+      var immagineAvatar = $('.you .img-avatar').children('img').attr('src' , srcImage );
       console.log(immagineAvatar);
+      console.log(this);
+      // $(this).eq(index).addClass('visible');
     }
 
   });
@@ -100,9 +103,13 @@ $(document).ready(function(){
 
     template.addClass('msg-received');
 
-    var messageChat = $('.js-chat').append(template);
+    if ($('.js-chat').hasClass('visible')) {
+     $('.js-chat.visible').append(template);
+    }
+
     $('.js-chat').scrollTop($('.js-chat').height());
   }
+  
   function sendMessage(){
     var textAdd = $('#text-add').val();
     var template = $('.template > .message-template').clone();
@@ -111,7 +118,12 @@ $(document).ready(function(){
     template.children('.time').text(timeAdd);
     template.addClass('msg-send');
 
-    var messageChat = $('.js-chat').append(template);
+    if ($('.js-chat').hasClass('visible')) {
+     $('.js-chat.visible').append(template);
+    }
+
+
+     // console.log(messageChat);
     $('.js-chat').scrollTop($('.js-chat').height());
     $('#text-add').val('');
   }
