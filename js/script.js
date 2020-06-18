@@ -1,7 +1,6 @@
 $(document).ready(function(){
   $('.contacts li').click(function (){
-    var index = $(this).index();
-    console.log(index);
+
     var dataContact = $(this).attr('data-contact');
     var srcImage = $(this).children('.img-avatar').children('img').attr('src');
     console.log(dataContact);
@@ -13,9 +12,11 @@ $(document).ready(function(){
     console.log(selettore);
     if ($(selettore).addClass('visible')) {
       var immagineAvatar = $('.you .img-avatar').children('img').attr('src' , srcImage );
+      var singolContact = $(this).find('h2').text();
+       var nameAvatar = $('.you .name-avatar').children('h2').text(singolContact);
       console.log(immagineAvatar);
-      console.log(this);
-      // $(this).eq(index).addClass('visible');
+      console.log(singolContact);
+      
     }
 
   });
@@ -109,7 +110,7 @@ $(document).ready(function(){
 
     $('.js-chat').scrollTop($('.js-chat').height());
   }
-  
+
   function sendMessage(){
     var textAdd = $('#text-add').val();
     var template = $('.template > .message-template').clone();
