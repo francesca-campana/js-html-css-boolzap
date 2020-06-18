@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  $('#search').keypress(function (event){
+  $('#search').keyup(function (event){
     if ( event.which ) {
       searchName();
     }
