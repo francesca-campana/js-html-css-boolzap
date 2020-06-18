@@ -16,10 +16,32 @@ $(document).ready(function(){
        var nameAvatar = $('.you .name-avatar').children('h2').text(singolContact);
       console.log(immagineAvatar);
       console.log(singolContact);
-      
+
     }
 
   });
+  $(document).on('click','.arrow', function (){
+    var messageDelete = $(this).siblings('.dropdown').addClass('visible');
+    if (messageDelete) {
+      // $(document).on('click', '.arrow', function (){
+      //   messageDelete.removeClass('visible');
+      // });
+      $('.arrow').click(function(){
+        messageDelete.removeClass('visible');
+        console.log(messageDelete);
+      });
+    }else {
+      messageDelete.addClass('visible');
+    }
+    console.log(messageDelete);
+  });
+  $(document).on('click','.dropdown', function (){
+    $(this).parent('.width-dropdown').remove();
+  });
+
+
+
+
 
   $('#search').keyup(function (event){
     if ( event.which ) {
