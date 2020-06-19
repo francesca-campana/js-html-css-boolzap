@@ -43,10 +43,16 @@ $(document).ready(function(){
     $('.phone').toggleClass('active');
 
     sendMessage();
-
+    $('.you .name-avatar').children('span').text('sta scrivendo...');
 
     setTimeout(function (){
+
       receivedMessage();
+      $('.you .name-avatar').children('span').text('Online');
+      // var textAvatar = $(this).find('.stato').text();
+
+      // console.log($(this).find('.stato').text());
+
     },3000);
 
   });

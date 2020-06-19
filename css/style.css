@@ -178,7 +178,7 @@ i {
   color: black;
   font-weight: normal;
 }
-.name-avatar > .stato {
+ .stato {
   display: none;
 }
 .name-avatar span {
