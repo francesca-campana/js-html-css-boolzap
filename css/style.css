@@ -178,6 +178,9 @@ i {
   color: black;
   font-weight: normal;
 }
+.name-avatar > .stato {
+  display: none;
+}
 .name-avatar span {
   font-size: 15px;
   color: lightgray;

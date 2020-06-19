@@ -10,14 +10,13 @@ $(document).ready(function(){
     console.log(selettore);
     $(selettore).addClass('visible');
     console.log(selettore);
-    if ($(selettore).addClass('visible')) {
-      var immagineAvatar = $('.you .img-avatar').children('img').attr('src' , srcImage );
-      var singolContact = $(this).find('h2').text();
-       var nameAvatar = $('.you .name-avatar').children('h2').text(singolContact);
-      console.log(immagineAvatar);
-      console.log(singolContact);
+    var immagineAvatar = $('.you .img-avatar').children('img').attr('src' , srcImage );
+    var singolContact = $(this).find('h2').text();
+    var nameAvatar = $('.you .name-avatar').children('h2').text(singolContact);
 
-    }
+    var textAvatar =$(this).find('.stato').text();
+    var statoAvatar = $('.you .name-avatar').children('span').text(textAvatar);
+
 
   });
   $(document).on('click','.arrow', function (){
