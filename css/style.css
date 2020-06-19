@@ -151,6 +151,13 @@ i {
   background: #ffffff;
   overflow-y: auto;
 }
+.contact-name:hover  {
+  background: #e4e4e4;
+  cursor:pointer;
+}
+.contact-name:hover span {
+  color: #7b8184;
+}
 .contact-name {
   height: 80px;
   display: flex;
@@ -227,22 +234,7 @@ section.content {
 .with-dropdown {
  position: relative;
 }
-/* .width-dropdown.send {
-  position: relative;
-} */
-/* .dropdown {
-  background: white;
-  padding: 3px;
-  position: absolute;
-  text-align: center;
-  white-space: normal;
-  line-height: 30px;
-  bottom: -18px;
-  border-radius: 10px;
-  right: -62px;
-  min-width: 113px;
-  display: none;
-} */
+
 .dropdown {
   background: white;
   padding: 3px;

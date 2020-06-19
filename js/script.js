@@ -21,25 +21,13 @@ $(document).ready(function(){
 
   });
   $(document).on('click','.arrow', function (){
-    var messageDelete = $(this).siblings('.dropdown').addClass('visible');
-    if (messageDelete) {
-      // $(document).on('click', '.arrow', function (){
-      //   messageDelete.removeClass('visible');
-      // });
-      $('.arrow').click(function(){
-        messageDelete.removeClass('visible');
-        console.log(messageDelete);
-      });
-    }else {
-      messageDelete.addClass('visible');
-    }
-    console.log(messageDelete);
+     $('.arrow').not(this).siblings('.dropdown').removeClass('visible');
+     $(this).siblings('.dropdown').toggleClass('visible');
   });
+
   $(document).on('click','.dropdown', function (){
     $(this).parent('.width-dropdown').remove();
   });
-
-
 
 
 
